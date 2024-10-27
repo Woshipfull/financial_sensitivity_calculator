@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+.not-responsive-page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  background-color: #2980b9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: white;
+  color: #2980b9;
+  padding: 20px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2rem; /* Розмір шрифта заголовка */
+  margin: 0; /* Прибираємо відступи */
+}
+
+/* DataInput */
+.data-input-block {
+  padding: 2rem;
+  gap: 10px;
+}
+
+.input-table {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(9, 1fr);
+  align-items: stretch;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .input-table {
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+  }
+
+  .data-input-block {
+    padding: 1rem;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 150px; /* Встановлюємо гнучку ширину */
+  min-width: 100px; /* Мінімальна ширина для запобігання звуження */
+  height: 100%; /* Висота блоку */
+  justify-content: space-between; /* Вирівнювання по краях */
+}
+
+.input-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-field {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.data-input-submit {
+  display: flex;
+}
+
+.submit-button-primary {
+  flex: 1 1 100%; /* Кнопка займатиме всю ширину */
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button-primary:hover {
+  background-color: #2980b9;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Видаляє стрілки в Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.data-input-error-message {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+}
