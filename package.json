@@ -2,6 +2,7 @@
   "name": "financial_sensitivity_calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://woshipfull.github.io/financial_sensitivity_calculator",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
