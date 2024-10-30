@@ -3,7 +3,6 @@ const { irr } = require('node-irr');
 const roundToTwo = (num) => Math.round(num * 100) / 100;
 
 export const getOsfNpv = (obj) => {
-  console.log(obj);
   const result = {};
 
   const OCIF = obj.dailySalesVolume * 365 * obj.pricePerUnit;

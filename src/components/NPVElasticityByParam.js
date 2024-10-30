@@ -105,7 +105,7 @@ const NPVElasticityByParam = ({ ukrNames, basicData, basicNpv }) => {
               <tr className="dpp-headers">
                 <td>Відсоток</td>
                 <td>Базове значення</td>
-                <td>Нове начення</td>
+                <td>Нове значення</td>
                 <td>Базове значення NPV</td>
                 <td>Нова зміна NPV</td>
                 <td>Еластичність NPV</td>

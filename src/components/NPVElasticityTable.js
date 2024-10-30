@@ -135,7 +135,7 @@ const NPVElasticityTable = ({ basicData, basicNpv, ukrNames }) => {
               <tr className="dpp-headers">
                 <td>Фактори</td>
                 <td>Базове значення</td>
-                <td>Нове начення (зміна на {percentsValue(percent)})</td>
+                <td>Нове значення (зміна на {percentsValue(percent)})</td>
                 <td>Базове значення NPV</td>
                 <td>Нова зміна NPV (зміна на {percentsValue(percent)})</td>
                 <td>Еластичність NPV</td>

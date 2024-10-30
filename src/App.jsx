@@ -77,8 +77,6 @@ const App = () => {
     }
     setDataInputErrors('');
 
-    console.log(formData);
-
     const OsfNpf = getOsfNpv(formData);
     const DppPiIrr = getDppPiIrr(formData, OsfNpf.OCF);
 
